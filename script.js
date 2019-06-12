@@ -28,3 +28,26 @@ window.location.assign('https://www.google.com')
 }
 
 /* Task 4 using jQuery */
+
+//Task 4a
+$(document).ready(function(){
+    $("#addText2").click(function(){
+        $("#task4a").append("<p>Hello World</p>");
+    });
+});
+
+//Task 4b
+$(document).ready(function(){
+    $("#red").click(function(){
+        $("body").css(“background-color”, “blue”); 
+    });
+});
+
+//Task 4c
+$(document).ready(function(){
+    $("#add").on(click, function(){
+        var x = $(input[name = "number1"]) + $(input[name = "number2"]);
+        
+        $("#task4c").append("<p>The sum is </p>" + val(x));
+    });
+});
